@@ -1,0 +1,21 @@
+lamguage: python
+
+python:
+  - 3.4
+
+#Installation
+#before_installation
+#after_installation
+
+#script
+script:
+  -echo "hello"
+
+#deploy
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token:$GITHUB_TOKEN
+  key_history: true
+  on:
+    branch: master
