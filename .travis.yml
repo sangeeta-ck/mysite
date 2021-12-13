@@ -17,5 +17,6 @@ deploy:
   skip_cleanup: true
   github_token:$GITHUB_TOKEN
   key_history: true
+  github_url: github.ibm.com
   on:
     branch: master
